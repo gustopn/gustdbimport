@@ -19,12 +19,12 @@ BEGIN {
     if ( length(output) > length(insertinto) ) {
       output = output ", ";
     }
-    output = output "( \"" shasum "\", \"" filepath "\" )";
   } else {
     print output ";";
     indexcounter = 0;
-    output = insertinto "( \"" shasum "\", \"" filepath "\" )";
+    output = insertinto;
   }
+  output = output "( \"" shasum "\", \"" filepath "\" )";
   indexcounter = indexcounter + 1;
 }
 END {
