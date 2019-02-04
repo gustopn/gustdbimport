@@ -6,7 +6,7 @@ BEGIN {
     granularity = 100;
   }
   indexcounter = 0;
-  insertinto = "INSERT INTO " table " (sum, path) VALUES ";
+  insertinto = "INSERT INTO " table " (sum, path, file, extension) VALUES ";
 }
 {
   firstseparation = index($0, " ");
