@@ -16,7 +16,7 @@ BEGIN {
   filename = pathlist[pathlen];
   filenamepartlen = split(filename, filenamepartlist, ".");
   if (filenamepartlen > 1) {
-    if ( length(filenamepartlist[0]) > 0 ) {
+    if ( length(filenamepartlist[1]) > 0 ) {
       fileextension = filenamepartlist[filenamepartlen];
     } else {
       fileextension = "";
