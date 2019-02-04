@@ -32,6 +32,9 @@ BEGIN {
     indexcounter = 0;
     output = insertinto;
   }
+  if ( length(fileextension) > 12 ) {
+    fileextension = "ERROR";
+  }
   output = output "( \"" shasum "\", \"" filepath "\", \"" filename "\", \"" fileextension "\" )";
   indexcounter = indexcounter + 1;
 }
